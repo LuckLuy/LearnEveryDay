@@ -51,7 +51,7 @@ import java.util.Queue;
      *  注意： 这个方法 只能取队列的元素，只能使用 poll。
      *      如果使用peek，会造成死循环，
      */
-    for (queue.size() > 0) {
+    for (queue.size() >   0) {
       String ss = queue.poll();
       System.out.println(ss);
     }
