@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper>
+
+	<!-- 删除多条数据 ,array-->
+	<delete id="deleteMuch" parameterType="int">
+		Delete from tb_door where id in
+		<foreach collection="array" item="id" open="(" close=")" separator=",">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>
